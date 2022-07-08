@@ -1,2 +1,3 @@
-# Prolog_Tuto-Challenges
-This repo contains some solved exercises from https://exercism.org/tracks/prolog/exercises
+# Prolog_Tuto
+* This repo contains Exercices of all concepts in Prolog.
+* You will find Solved Exercises from the LEARN PROLOG NOW book.
