@@ -90,3 +90,32 @@ Hermione = dobby ;
 % every criminal likes every criminal
 % every criminal likes every big kahuna burger
 % every big kahuna burger eats a criminal
+
+
+% Exercise  2.4 
+% Here are six Italian words:
+
+astante , astoria , baratto , cobalto , pistola , statale .
+
+% They are to be arranged, crossword puzzle fashion, in the following grid:
+
+% You can find the grid in the page : http://www.let.rug.nl/bos/lpn//lpnpage.php?pagetype=html&pageid=lpn-htmlse7
+
+% The following knowledge base represents a lexicon containing these words:
+
+   word(astante,  a,s,t,a,n,t,e).
+   word(astoria,  a,s,t,o,r,i,a).
+   word(baratto,  b,a,r,a,t,t,o).
+   word(cobalto,  c,o,b,a,l,t,o).
+   word(pistola,  p,i,s,t,o,l,a).
+   word(statale,  s,t,a,t,a,l,e).
+
+% Write a predicate crossword/6 that tells us how to fill in the grid. The first three arguments should be the vertical words from left to right, and the last three arguments the horizontal words from top to bottom.
+
+crosswd(H1,H2,H3,V1,V2,V3) :-
+    word(H1,_,A,_,B,_,C,_),
+    word(H2,_,D,_,E,_,F,_),
+    word(H3,_,G,_,H,_,I,_),
+    word(V1,_,A,_,D,_,G,_),
+    word(V2,_,B,_,E,_,H,_),
+    word(V3,_,C,_,F,_,I,_).
